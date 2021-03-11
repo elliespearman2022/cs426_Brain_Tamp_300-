@@ -1,0 +1,70 @@
+﻿Bug Ticket
+Assigned//Ellie Spearman
+
+
+
+
+#### Issue description
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+
+
+	
+
+	
+
+
+
+	
+
+	#### Steps to reproduce the issue
+	
+
+	
+
+
+
+	
+
+	1. Create basic map with simple geometric characters and resources 
+	
+
+	2. Simple coding functions of player interaction, timer, score.
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+
+
+	
+
+	#### What's the expected result?
+	
+
+	
+
+
+
+	
+
+	- A functional prototype visualizing the basic concepts of the overall concept and frame of the game.
