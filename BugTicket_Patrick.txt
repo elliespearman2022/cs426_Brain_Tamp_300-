@@ -1,0 +1,18 @@
+﻿Bug Ticket
+Assigned//Ellie Spearman
+
+
+#### Issue description
+	
+
+#### Steps to reproduce the issue
+
+	1. Create an inventory for the player 
+	
+	2. Player employee(NPC) interaction.
+
+#### What's the expected result?
+	
+	1. Has a maximum number of items the character han hold at a time, as well as the amounts of each item.
+
+	2. Player talks to a player when facing an employee.
