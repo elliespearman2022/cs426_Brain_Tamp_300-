@@ -15,4 +15,4 @@ Assigned//Ellie Spearman
 	
 	1. Has a maximum number of items the character han hold at a time, as well as the amounts of each item.
 
-	2. Player talks to a player when facing an employee.
+	2. Player talks to an employee when facing said employee.
