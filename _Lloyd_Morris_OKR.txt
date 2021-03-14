@@ -1,0 +1,6 @@
+Prototype Schedule Breakdown:
+
+
+Player to NPC Interaction: Check Temp -- by 11am Tuesday (est:2hrs)
+Player to NPC interaction P.2: Double Check = Temp Goes to 300° -- by 11am Tuesday (est:3hrs)
+Player to NPC Interaction P.3: Give Donut to 300° Worker -- by 11am Tuesday (est:2hrs)
