@@ -5350,6 +5350,60 @@ MonoBehaviour:
   speed: 25
   rotationSpeed: 90
   force: 700
+--- !u!114 &931697384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931697377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468a31207453e704a91b624c65372390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  donut1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1695095683}
+        m_MethodName: meshOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  donut2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1826406990}
+        m_MethodName: meshOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  donut3:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1942258063}
+        m_MethodName: meshOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &934081258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,6 +7931,7 @@ GameObject:
   - component: {fileID: 1695095681}
   - component: {fileID: 1695095680}
   - component: {fileID: 1695095679}
+  - component: {fileID: 1695095683}
   m_Layer: 0
   m_Name: donut1
   m_TagString: Untagged
@@ -7958,6 +8013,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1695095683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695095678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b34f0264d403f740b467e6c6e1b1c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698414161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8620,6 +8687,7 @@ GameObject:
   - component: {fileID: 1826406988}
   - component: {fileID: 1826406987}
   - component: {fileID: 1826406986}
+  - component: {fileID: 1826406990}
   m_Layer: 0
   m_Name: donut2
   m_TagString: Untagged
@@ -8701,6 +8769,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1826406990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826406985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b34f0264d403f740b467e6c6e1b1c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1826865929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8992,6 +9072,7 @@ GameObject:
   - component: {fileID: 1942258061}
   - component: {fileID: 1942258060}
   - component: {fileID: 1942258059}
+  - component: {fileID: 1942258063}
   m_Layer: 0
   m_Name: donut3
   m_TagString: Untagged
@@ -9073,6 +9154,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1942258063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942258058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b34f0264d403f740b467e6c6e1b1c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1951241021
 GameObject:
   m_ObjectHideFlags: 0
@@ -9976,6 +10069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448380908646340246, guid: 40a5a45c84c3541f6938be842bb0569e,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3448380909013234451, guid: 40a5a45c84c3541f6938be842bb0569e,
         type: 3}
