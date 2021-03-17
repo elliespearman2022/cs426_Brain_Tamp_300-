@@ -8,10 +8,13 @@ public class inventory : MonoBehaviour
     public UnityEvent donut1;
     public UnityEvent donut2;
     public UnityEvent donut3;
+    public UnityEvent load2;
+    public UnityEvent load3;
     int inventoryMax;
     int inventoryTotal;
     int donuts;
     bool hot;
+    bool stafe;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,10 @@ public class inventory : MonoBehaviour
         inventoryTotal = 3;
         donuts = 3;
         hot = true;
+        stafe = true;
+            load2.Invoke();
+            load3.Invoke();
+            load3.Invoke();
     }
 
     void removeDonut()
@@ -46,6 +53,10 @@ public class inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(stafe)
+        {
+            stafe = false;
+        }
         if (Input.GetKey(KeyCode.Q) && hot)
         {
             removeDonut();
