@@ -19,6 +19,33 @@ public class CharacterControllerShooter : MonoBehaviour
     Rigidbody rb;
     Transform t;
     int donutCounter = 3;
+    
+    
+    
+    //Added material here
+    public int countdownTime;
+    public Text countdownDisplay;
+    public int beginGame = 0;
+    
+    
+    IEnumerator CountdownToStart() {
+        
+        while(countdownTime > 0) {
+            
+            countdownDisplay.text = countdownTime.ToString();
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
+        }
+    
+    
+        countdownDisplay.text = "START!";
+        beginGame = 1;
+    
+        yield return new WaitForSeconds(1f);
+        countdownDisplay.gameObject.SetActive(false);
+
+    }
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +53,19 @@ public class CharacterControllerShooter : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         t = GetComponent<Transform>();
         donutsLeft.GetComponent<Text>().text = "Donuts left: 3/3";
+        
+        //Added material here
+        StartCoroutine(CountdownToStart());
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        if(beginGame == 1) {
+        
+        
+        
         // Time.deltaTime represents the time that passed since the last frame
         //the multiplication below ensures that GameObject moves constant speed every frame
         if (Input.GetKey(KeyCode.W))
@@ -56,5 +91,6 @@ public class CharacterControllerShooter : MonoBehaviour
 	   donutsLeft.GetComponent<Text>().text = "Donuts left: " + donutCounter + "/3";	
         }
 
+        }
     }
 }

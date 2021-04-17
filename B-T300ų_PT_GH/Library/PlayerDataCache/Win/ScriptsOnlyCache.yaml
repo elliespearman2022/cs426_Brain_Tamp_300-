@@ -1,17 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AIBehavior
     - CharacterControllerShooter
     - DoorController
     - Timer
+    - TriggerSFX
     - cameraLock
-    - inventory
     - removal
-    NavMeshComponents.dll:
-    - UnityEngine.AI.NavMeshSurface
-    NavMeshComponentsEditor.dll:
-    - UnityEditor.AI.NavMeshAssetManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -23,6 +18,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -67,31 +63,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11336}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11344}
+      Script: {instanceID: 11426}
     - Class: 114
-      Script: {instanceID: 11498}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 12214}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 12726}
     - Class: 114
-      Script: {instanceID: 12784}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12764}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13094}
+      Script: {instanceID: 13038}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 13040}
     - Class: 114
-      Script: {instanceID: 27962}
+      Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 28020}
+      Script: {instanceID: 16218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -102,8 +98,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
-    - Class: 195
-      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 222
@@ -111,8 +105,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -123,16 +115,16 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 5bccf6b1d9c3ea81092272ecb2a1f6fb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: inventory
-  - hash:
-      serializedVersion: 2
       Hash: c42672c997f8be6b1aa86a927ebea785
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 3a4a90f47025f31a560e5324984bf4c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIBehavior
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -145,6 +137,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 2b19be13f00df62e6d4d4f5539bcad51
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: c8c672fee8a258266e51b55a210b8083
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshLink
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -327,6 +331,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 7299a528424874bcf6b5736b5305ac37
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
       Hash: 0aaab36e708489d251423763361dd32d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -357,7 +367,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 29d57fb0db0361501800a3b8110f9176
+      Hash: 7c6cf520714a392d062762f54d169a51
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -393,7 +403,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+      Hash: f64fd37da5cb89243ec68b5026d70bb8
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: InputField
@@ -459,6 +469,12 @@ ScriptsOnlyBuild:
     className: showText
   - hash:
       serializedVersion: 2
+      Hash: 8d4458b476a9a4dd8df843a849fcfffa
+    assemblyName: NavMeshComponents.dll
+    namespaceName: UnityEngine.AI
+    className: NavMeshSurface
+  - hash:
+      serializedVersion: 2
       Hash: f38d8b3fc03d1ecbbe80aaa9655665b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -483,7 +499,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 3b83e6d57bb66e6b965dd8ff722e609c
+      Hash: 4a063009c34c9002c871ba67b73427a0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterControllerShooter
@@ -499,6 +515,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: c095cf855b7acd9cd0cb920fada1c1db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerSFX
   - hash:
       serializedVersion: 2
       Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
@@ -603,35 +625,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 3a4a90f47025f31a560e5324984bf4c2
+      Hash: 1db9f914a57f28ab495ca49aa9776c13
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AIBehavior
-  - hash:
-      serializedVersion: 2
-      Hash: 2b19be13f00df62e6d4d4f5539bcad51
-    assemblyName: NavMeshComponents.dll
-    namespaceName: UnityEngine.AI
-    className: NavMeshModifier
-  - hash:
-      serializedVersion: 2
-      Hash: c8c672fee8a258266e51b55a210b8083
-    assemblyName: NavMeshComponents.dll
-    namespaceName: UnityEngine.AI
-    className: NavMeshLink
-  - hash:
-      serializedVersion: 2
-      Hash: 7299a528424874bcf6b5736b5305ac37
-    assemblyName: NavMeshComponents.dll
-    namespaceName: UnityEngine.AI
-    className: NavMeshModifierVolume
-  - hash:
-      serializedVersion: 2
-      Hash: 8d4458b476a9a4dd8df843a849fcfffa
-    assemblyName: NavMeshComponents.dll
-    namespaceName: UnityEngine.AI
-    className: NavMeshSurface
+    className: CountDownScript
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "D:/Documents/School/Spring 2021/CS 426/Assignments/Assignment 7/Output/B-T300\xB0_PT.exe"
+  playerPath: "/Users/Abel/Documents/School/UIC Spring '21/CS 426/Homework/HW6/cs426_Brain_Tamp_300-/BetaBuildWindows/B-T300\xB0_PT.exe"
