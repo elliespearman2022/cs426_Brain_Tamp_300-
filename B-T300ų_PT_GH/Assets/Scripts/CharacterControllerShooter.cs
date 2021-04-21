@@ -46,7 +46,11 @@ public class CharacterControllerShooter : MonoBehaviour
 
     }
     
-
+    public void replenish()
+    {
+        donutCounter = 3;
+        donutsLeft.GetComponent<Text>().text = "Donuts left: 3/3";
+    }
     // Start is called before the first frame update
     void Start()
     {
