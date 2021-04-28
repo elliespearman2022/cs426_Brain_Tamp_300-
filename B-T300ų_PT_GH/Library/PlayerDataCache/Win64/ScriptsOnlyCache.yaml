@@ -1,15 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AIBehavior
+    - AIPatrol
     - CharacterControllerShooter
     - DoorController
-    - NPCAttributes
+    - NPC1
+    - NPC2
+    - NPC3
+    - NPC4
+    - NavMeshBaker
     - Timer
     - TriggerSFX
     - cameraLock
     - removal
     - replenish
     - scoreBoard
+    - showTemp
+    NavMeshComponents.dll:
+    - UnityEngine.AI.NavMeshSurface
+    NavMeshComponentsEditor.dll:
+    - UnityEditor.AI.NavMeshAssetManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -66,37 +77,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11868}
+      Script: {instanceID: 11424}
     - Class: 114
-      Script: {instanceID: 12014}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 12226}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 12352}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 12678}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12730}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 12872}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13044}
     - Class: 114
-      Script: {instanceID: 13118}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 16364}
+      Script: {instanceID: 13106}
+    - Class: 114
+      Script: {instanceID: 16308}
+    - Class: 114
+      Script: {instanceID: 132904}
+    - Class: 114
+      Script: {instanceID: 138910}
+    - Class: 114
+      Script: {instanceID: 138916}
+    - Class: 114
+      Script: {instanceID: 138922}
+    - Class: 114
+      Script: {instanceID: 433000}
+    - Class: 114
+      Script: {instanceID: 634762}
+    - Class: 114
+      Script: {instanceID: 719250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -109,6 +136,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 222
@@ -116,6 +145,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -132,7 +163,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: 3a4a90f47025f31a560e5324984bf4c2
+      Hash: c86687642afb7c85184e25fa53a6af80
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AIBehavior
@@ -474,7 +505,7 @@ ScriptsOnlyBuild:
     className: CountDownScript
   - hash:
       serializedVersion: 2
-      Hash: ec347e36285607345202e036b4459021
+      Hash: db9051796aa7286a94629912c13c6af8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scoreBoard
@@ -522,7 +553,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 4a063009c34c9002c871ba67b73427a0
+      Hash: 559f017c62098be43e835dd422847f92
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterControllerShooter
@@ -652,7 +683,49 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC1
+  - hash:
+      serializedVersion: 2
+      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC2
+  - hash:
+      serializedVersion: 2
+      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC3
+  - hash:
+      serializedVersion: 2
+      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC4
+  - hash:
+      serializedVersion: 2
+      Hash: 1c8e90610a1bef81ee610f9969121fea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: showTemp
+  - hash:
+      serializedVersion: 2
+      Hash: 952d5e9de35d4541b3e8d13e752d0731
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIPatrol
+  - hash:
+      serializedVersion: 2
+      Hash: cc3606aca47f112f6c624e25f5e9e263
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NavMeshBaker
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "/Users/elliespearman/Desktop/output/Beta_WindowsBuild/B-T300\xB0_PT.exe"
+  playerPath: "D:/Documents/School/Spring 2021/CS 426/Assignments/Assignment 8/Resubmission/Output/B-T300\xB0_PT.exe"

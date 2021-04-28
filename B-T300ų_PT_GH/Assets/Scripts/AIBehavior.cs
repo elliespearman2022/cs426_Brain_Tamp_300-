@@ -26,10 +26,10 @@ public class AIBehavior : MonoBehaviour
 
     // We don't need this just yet
     // Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    // public float timeBetweenAttacks;
+    // bool alreadyAttacked;
     // Might not need this 
-    public GameObject projectile;
+    //public GameObject projectile;
 
     // States
     public float sightRange, attackRange;
@@ -44,11 +44,11 @@ public class AIBehavior : MonoBehaviour
     private void Update(){
         // Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
         if(!playerInSightRange && !playerInAttackRange) Patrolling();
         if(playerInSightRange  && !playerInAttackRange) ChasePlayer();
-        if(playerInAttackRange && playerInSightRange) AttackPlayer();
+        //if(playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
     private void Patrolling(){
@@ -86,17 +86,17 @@ public class AIBehavior : MonoBehaviour
         // Make sure the enemy doesn't move
         agent.SetDestination(transform.position);
         transform.LookAt(player);
-        if(!alreadyAttacked){
-            // Attack Code
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb. AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb. AddForce(transform.up * 8f, ForceMode.Impulse);
+        // if(!alreadyAttacked){
+        //     // Attack Code
+        //     // Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+        //     // rb. AddForce(transform.forward * 32f, ForceMode.Impulse);
+        //     // rb. AddForce(transform.up * 8f, ForceMode.Impulse);
 
 
-            //
-            alreadyAttacked = true;
-            //Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+        //     //
+        //     alreadyAttacked = true;
+        //     //Invoke(nameof(ResetAttack), timeBetweenAttacks);
+        // }
     }
 
     /* 

@@ -9073,6 +9073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scorePoint: {fileID: 866546202}
+  score: 0
 --- !u!114 &866546205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27400,6 +27401,8 @@ MonoBehaviour:
   cannon: {fileID: 1387513015}
   bullet: {fileID: 4908748332891870599, guid: d32416c60871b49a989b0d08bdbcebc7, type: 3}
   donutsLeft: {fileID: 1370279875}
+  npcTemp: {fileID: 0}
+  score: {fileID: 0}
   countdownTime: 5
   countdownDisplay: {fileID: 805850007}
   beginGame: 0
@@ -27419,6 +27422,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!65 &919132149086500649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149086500643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &919132149086500650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469310607553051359, guid: 32149db8314a74ec7b552ec183f0a6e2,

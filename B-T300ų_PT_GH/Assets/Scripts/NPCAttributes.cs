@@ -3,8 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+THIS FILE IS NO LONGER USED. EACH NPC HAS THEIR OWN SCRIPT
+*/
+
 public class NPCAttributes : MonoBehaviour
 {
+
+    // These are in regards to the player collider and NPC collider
+    private GameObject triggeringNPC;
+    private bool triggering;
+
+    // Check to see the player has triggered the NPC
+    void OnTriggerEnter(Collider other){
+        if(other.tag == "NPC"){
+            triggering = true;
+            triggeringNPC = other.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider other){
+        if(other.tag == "NPC"){
+            triggering = false;
+            triggeringNPC = null;
+        }
+    }
+    
     // Each NPCs individual temp value
     public int npc1Temp = 0;
     public int npc2Temp = 0; 

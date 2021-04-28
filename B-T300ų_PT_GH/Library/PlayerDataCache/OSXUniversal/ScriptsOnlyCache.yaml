@@ -3,10 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CharacterControllerShooter
     - DoorController
+    - NPCAttributes
     - Timer
     - TriggerSFX
     - cameraLock
     - removal
+    - replenish
+    - scoreBoard
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -63,36 +66,44 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11426}
+      Script: {instanceID: 11424}
     - Class: 114
-      Script: {instanceID: 11856}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 12726}
+      Script: {instanceID: 12338}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 12764}
+      Script: {instanceID: 12730}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 12768}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 12860}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 16218}
+      Script: {instanceID: 13044}
+    - Class: 114
+      Script: {instanceID: 13046}
+    - Class: 114
+      Script: {instanceID: 13106}
+    - Class: 114
+      Script: {instanceID: 16308}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -391,7 +402,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 2a4f472daf8b37d78c9c57dfc3343420
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPCAttributes
@@ -457,6 +468,18 @@ ScriptsOnlyBuild:
     className: PlayerMovement
   - hash:
       serializedVersion: 2
+      Hash: 1db9f914a57f28ab495ca49aa9776c13
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CountDownScript
+  - hash:
+      serializedVersion: 2
+      Hash: 3a0256c14e8ff5279960775a2a6197eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scoreBoard
+  - hash:
+      serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -499,10 +522,16 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 4a063009c34c9002c871ba67b73427a0
+      Hash: e4b56204b1b1f7bc97ec3ed8533d406d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterControllerShooter
+  - hash:
+      serializedVersion: 2
+      Hash: 7c5a83387276ecef3115ce76434230b0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: replenish
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -623,13 +652,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 1db9f914a57f28ab495ca49aa9776c13
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CountDownScript
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/Abel/Documents/School/UIC Spring '21/CS 426/Homework/HW6/cs426_Brain_Tamp_300-/BetaBuildMac.app
+  playerPath: D:/Documents/GitHub/Output Mac.app

@@ -36,7 +36,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timeRemaining = timeToWin;
-        textField.GetComponent<Text>().text = "Time left: 03:00";
+        textField.GetComponent<Text>().text = "Time Left: 03:00";
         StartCoroutine(CountdownToStart());
         
     }
@@ -69,12 +69,12 @@ public class Timer : MonoBehaviour
             
                 //Different text output if the seconds remaining are greater than 10 seconds.
                 else if(secRemaining >= 10) {
-                    textField.GetComponent<Text>().text = "Time left: 0" + minRemaining + ":" + secRemaining;
+                    textField.GetComponent<Text>().text = "Time Left: 0" + minRemaining + ":" + secRemaining;
                 }
                 
                 //Different text output if the seconds remaining are less than 10 seconds, but greater than 0.
                 else if(secRemaining < 10 && secRemaining >= 0) {
-                    textField.GetComponent<Text>().text = "Time left: 0" + minRemaining + ":0" + secRemaining;
+                    textField.GetComponent<Text>().text = "Time Left: 0" + minRemaining + ":0" + secRemaining;
                 }
                 
                 else {
@@ -87,7 +87,7 @@ public class Timer : MonoBehaviour
             //If time has ran out!
             else if(timeRemaining <= 0) {
                 
-                textField.GetComponent<Text>().text = "Game over!";
+                textField.GetComponent<Text>().text = "Game Over!";
                 
                 //Add "You lose!" game screen / scene here, & ending game code.
                 
