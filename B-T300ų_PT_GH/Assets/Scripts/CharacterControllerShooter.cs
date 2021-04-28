@@ -135,8 +135,8 @@ public class CharacterControllerShooter : MonoBehaviour
                 // Change the output of the temperature on the HUD
                 if(Input.GetKeyDown(KeyCode.Mouse1)){
                     Debug.Log("Key is functioning");
-                    temp.text = triggeringNPC.GetComponent<NPC1>().the1Temp;
-                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC1>().npc1Temp;
+                    //temp.text = triggeringNPC.GetComponent<NPC1>().the1Temp;
+                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC1>().npc1Temp + "°";
                     if(triggeringNPC.GetComponent<NPC1>().npc1Temp < 300){
                         score.addPoint();
                         // Disable their trigger collider
@@ -150,8 +150,8 @@ public class CharacterControllerShooter : MonoBehaviour
                 if(Input.GetKeyDown(KeyCode.Mouse1)){
                     Debug.Log("Key is functioning");
                     // Change the output of the temperature on the HUD
-                    temp.text = triggeringNPC.GetComponent<NPC2>().the2Temp;
-                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC2>().npc2Temp;
+                    //temp.text = triggeringNPC.GetComponent<NPC2>().the2Temp;
+                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC2>().npc2Temp + "°";
                     if(triggeringNPC.GetComponent<NPC2>().npc2Temp < 300){
                         score.addPoint();
                         // Disable their trigger collider
@@ -165,8 +165,8 @@ public class CharacterControllerShooter : MonoBehaviour
                 if(Input.GetKeyDown(KeyCode.Mouse1)){
                     Debug.Log("Key is functioning");
                     // Change the output of the temperature on the HUD
-                    temp.text = triggeringNPC.GetComponent<NPC3>().the3Temp;
-                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC3>().npc3Temp;
+                    //temp.text = triggeringNPC.GetComponent<NPC3>().the3Temp;
+                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC3>().npc3Temp + "°";
                     if(triggeringNPC.GetComponent<NPC3>().npc3Temp < 300){
                         score.addPoint();
                         // Disable their trigger collider
@@ -180,8 +180,8 @@ public class CharacterControllerShooter : MonoBehaviour
                 if(Input.GetKeyDown(KeyCode.Mouse1)){
                     Debug.Log("Key is functioning");
                     // Change the output of the temperature on the HUD
-                    temp.text = triggeringNPC.GetComponent<NPC4>().the4Temp;
-                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC4>().npc4Temp;
+                    //temp.text = triggeringNPC.GetComponent<NPC4>().the4Temp;
+                    temp.GetComponent<Text>().text = "Temp: "+ triggeringNPC.GetComponent<NPC4>().npc4Temp + "°";
                     if(triggeringNPC.GetComponent<NPC4>().npc4Temp < 300){
                         score.addPoint();
                         // Disable their trigger collider
