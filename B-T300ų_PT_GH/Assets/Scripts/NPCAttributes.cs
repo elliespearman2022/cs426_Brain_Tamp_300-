@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 /*
 THIS FILE IS NO LONGER USED. EACH NPC HAS THEIR OWN SCRIPT
@@ -9,10 +10,12 @@ THIS FILE IS NO LONGER USED. EACH NPC HAS THEIR OWN SCRIPT
 
 public class NPCAttributes : MonoBehaviour
 {
+    public UnityEvent scoreing;
 
     // These are in regards to the player collider and NPC collider
     private GameObject triggeringNPC;
     private bool triggering;
+    private bool scored;
 
     // Check to see the player has triggered the NPC
     void OnTriggerEnter(Collider other){
@@ -75,6 +78,14 @@ public class NPCAttributes : MonoBehaviour
     //     randomTemp(x) = npc1Temp; 
     // }
 
+    public void score()
+    {
+        if(scored)
+        {
+          scored = false;
+          scoreing.Invoke();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -87,6 +98,7 @@ public class NPCAttributes : MonoBehaviour
         Debug.Log("NPC 2 Temp: " + NPC2.npc2Temp);
         Debug.Log("NPC 3 Temp: " + NPC3.npc3Temp);
         Debug.Log("NPC 4 Temp: " + NPC4.npc4Temp); 
+        scored = true;
     }
 
     

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7014757986043541425}
   - component: {fileID: 8925989677744285075}
   - component: {fileID: 38225156204660162}
+  - component: {fileID: 8456367714609607071}
   m_Layer: 0
   m_Name: DonutObject
   m_TagString: Untagged
@@ -110,3 +111,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8456367714609607071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4908748332891870599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9508e77dbe9d243969e30c651ec44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
