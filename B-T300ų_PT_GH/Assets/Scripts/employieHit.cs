@@ -5,7 +5,10 @@ using UnityEngine.Events;
 
 public class employieHit : MonoBehaviour
 {
-    public UnityEvent score;
+    public UnityEvent score1;
+    public UnityEvent score2;
+    public UnityEvent score3;
+    public UnityEvent score4;
     private GameObject player;
     private Vector3 playerPos;
     private bool stoped;
@@ -27,7 +30,7 @@ public class employieHit : MonoBehaviour
             
             if( -70 >= playerPos[0] && -80 <= playerPos[0])//x
             {
-                score.Invoke();
+                score1.Invoke();
                 stoped = false;
             }
         }
@@ -36,7 +39,7 @@ public class employieHit : MonoBehaviour
             
             if( -52 >= playerPos[0] && -62 <= playerPos[0])//x
             {
-                score.Invoke();
+                score2.Invoke();
                 stoped = false;
             }
         }
@@ -45,7 +48,7 @@ public class employieHit : MonoBehaviour
             
             if( 53 >= playerPos[0] && 43 <= playerPos[0])//x
             {
-                score.Invoke();
+                score3.Invoke();
                 stoped = false;
             }
         }
@@ -54,7 +57,7 @@ public class employieHit : MonoBehaviour
             
             if( -54 >= playerPos[0] && -64 <= playerPos[0])//x
             {
-                score.Invoke();
+                score4.Invoke();
                 stoped = false;
             }
         }
