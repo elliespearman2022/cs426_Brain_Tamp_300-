@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 909, y: 442}
   m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 114
+  controlID: 59
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 138
+  controlID: 143
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,9 +401,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 21.444735, y: 4.300726, z: -61.337482}
+    m_Target: {x: 116.3014, y: -18.196663, z: -211.73016}
     speed: 2
-    m_Value: {x: 21.444735, y: 4.300726, z: -61.337482}
+    m_Value: {x: 116.3014, y: -18.196663, z: -211.73016}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -449,13 +449,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0006356253, y: -0.9353683, z: 0.35367832, w: 0.0016803372}
+    m_Target: {x: -0.055608515, y: -0.8984801, z: 0.11929327, w: -0.41882727}
     speed: 2
-    m_Value: {x: 0.0006356236, y: -0.93536574, z: 0.35367733, w: 0.0016803326}
+    m_Value: {x: -0.05560835, y: -0.89847744, z: 0.119292915, w: -0.418826}
   m_Size:
-    m_Target: 15.067762
+    m_Target: 42.14513
     speed: 2
-    m_Value: 15.067762
+    m_Value: 42.14513
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -585,8 +585,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 50490000
-    m_LastClickedID: 18768
+    m_SelectedIDs: 2a490000
+    m_LastClickedID: 18730
     m_ExpandedIDs: 000000001a49000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -708,4 +708,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 698
+  m_LastVerticalScrollValue: 0
