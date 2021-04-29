@@ -6,6 +6,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 // MonoBehavior is the base class from which every Unity Script Derives
 public class CharacterControllerShooter : MonoBehaviour
@@ -17,6 +19,9 @@ public class CharacterControllerShooter : MonoBehaviour
     public GameObject cannon;
     public GameObject bullet;
     public GameObject donutsLeft;
+
+    public int sceneNumber = 1;
+    public int firstRun = 1;
 
     Rigidbody rb;
     Transform t;
@@ -55,6 +60,10 @@ public class CharacterControllerShooter : MonoBehaviour
     
     
     IEnumerator CountdownToStart() {
+
+	while(SceneManager.GetActiveScene().buildIndex != sceneNumber) {
+		yield return null;
+	}
         
         while(countdownTime > 0) {
             
@@ -93,8 +102,11 @@ public class CharacterControllerShooter : MonoBehaviour
     {
         
         if(beginGame == 1) {
-        
-        
+		
+		if(firstRun == 1) {
+        			donutsLeft.GetComponent<Text>().text = "Donuts Left: 3/3";
+			firstRun = 0;
+		}
         
         // Time.deltaTime represents the time that passed since the last frame
         //the multiplication below ensures that GameObject moves constant speed every frame

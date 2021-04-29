@@ -1,28 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AIBehavior
-    - AIPatrol
     - CharacterControllerShooter
     - DoorController
-    - NPC1
-    - NPC2
-    - NPC3
-    - NPC4
-    - NavMeshBaker
+    - NPCAttributes
+    - SceneLoader
     - Timer
     - TriggerSFX
     - cameraLock
+    - employieHit
     - removal
     - replenish
     - scoreBoard
-    - showTemp
-    NavMeshComponents.dll:
-    - UnityEngine.AI.NavMeshSurface
-    NavMeshComponentsEditor.dll:
-    - UnityEditor.AI.NavMeshAssetManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -30,8 +27,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
@@ -77,53 +76,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11284}
+      Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11882}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 12030}
     - Class: 114
-      Script: {instanceID: 12000}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12212}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12666}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12698}
     - Class: 114
-      Script: {instanceID: 12730}
+      Script: {instanceID: 12762}
     - Class: 114
-      Script: {instanceID: 12746}
+      Script: {instanceID: 12778}
     - Class: 114
-      Script: {instanceID: 12768}
+      Script: {instanceID: 12800}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12992}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13044}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 13046}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 13144}
     - Class: 114
-      Script: {instanceID: 16308}
-    - Class: 114
-      Script: {instanceID: 132904}
-    - Class: 114
-      Script: {instanceID: 138910}
-    - Class: 114
-      Script: {instanceID: 138916}
-    - Class: 114
-      Script: {instanceID: 138922}
-    - Class: 114
-      Script: {instanceID: 433000}
-    - Class: 114
-      Script: {instanceID: 634762}
-    - Class: 114
-      Script: {instanceID: 719250}
+      Script: {instanceID: 16430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,8 +121,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
-    - Class: 195
-      Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
     - Class: 222
@@ -146,7 +129,70 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 238
+    Assets/Scenes/StartScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11278}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11882}
+    - Class: 114
+      Script: {instanceID: 11910}
+    - Class: 114
+      Script: {instanceID: 12284}
+    - Class: 114
+      Script: {instanceID: 12506}
+    - Class: 114
+      Script: {instanceID: 12520}
+    - Class: 114
+      Script: {instanceID: 12708}
+    - Class: 114
+      Script: {instanceID: 12778}
+    - Class: 114
+      Script: {instanceID: 12938}
+    - Class: 114
+      Script: {instanceID: 13144}
+    - Class: 114
+      Script: {instanceID: 43144}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -191,6 +237,12 @@ ScriptsOnlyBuild:
     assemblyName: NavMeshComponents.dll
     namespaceName: UnityEngine.AI
     className: NavMeshLink
+  - hash:
+      serializedVersion: 2
+      Hash: cc3606aca47f112f6c624e25f5e9e263
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NavMeshBaker
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -355,6 +407,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 4500af2f393ae4df0cab9191a33c5ff5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC2
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -403,13 +461,19 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 8b5d69afdb32d723c55ec79ab02ddd55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: employieHit
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 7c6cf520714a392d062762f54d169a51
+      Hash: 8710112c83e1c7074b3322a8e7d16d96
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -419,6 +483,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 952d5e9de35d4541b3e8d13e752d0731
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIPatrol
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -433,7 +503,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 2a4f472daf8b37d78c9c57dfc3343420
+      Hash: 984e8b7b1b41f8d3a92d8bd93110993c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPCAttributes
@@ -553,10 +623,22 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 559f017c62098be43e835dd422847f92
+      Hash: c7b642c4cf4f65d2ec7f8c209469ac99
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterControllerShooter
+  - hash:
+      serializedVersion: 2
+      Hash: 1c8e90610a1bef81ee610f9969121fea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: showTemp
+  - hash:
+      serializedVersion: 2
+      Hash: cc4f43dae3616d7d9aabec4931848dfb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC4
   - hash:
       serializedVersion: 2
       Hash: 7c5a83387276ecef3115ce76434230b0
@@ -575,6 +657,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 99ca528ea45209461247988e620612a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC3
   - hash:
       serializedVersion: 2
       Hash: c095cf855b7acd9cd0cb920fada1c1db
@@ -667,6 +755,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 561fa9cb660558b6a6b5ac6000e26370
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC1
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -685,47 +779,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: NPC1
-  - hash:
-      serializedVersion: 2
-      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NPC2
-  - hash:
-      serializedVersion: 2
-      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NPC3
-  - hash:
-      serializedVersion: 2
-      Hash: 08b445fe94abe5f75aa9b4e31dc91c52
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NPC4
-  - hash:
-      serializedVersion: 2
-      Hash: 1c8e90610a1bef81ee610f9969121fea
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: showTemp
-  - hash:
-      serializedVersion: 2
-      Hash: 952d5e9de35d4541b3e8d13e752d0731
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AIPatrol
-  - hash:
-      serializedVersion: 2
-      Hash: cc3606aca47f112f6c624e25f5e9e263
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NavMeshBaker
+    className: SceneLoader
   platform: 19
   scenePathNames:
+  - Assets/Scenes/StartScene.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: "D:/Documents/School/Spring 2021/CS 426/Assignments/Assignment 8/Resubmission/Output/B-T300\xB0_PT.exe"
+  playerPath: "/Users/Abel/Documents/School/UIC Spring '21/CS 426/Homework/HW6/cs426_Brain_Tamp_300-/Final
+    Windows Build/Brain-Temp 300\xB0/B-T300\xB0_PT.exe"

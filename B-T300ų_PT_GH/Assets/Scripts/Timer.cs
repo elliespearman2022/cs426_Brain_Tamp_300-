@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class Timer : MonoBehaviour
@@ -19,8 +21,14 @@ public class Timer : MonoBehaviour
     //Added material here
     public int countdownTime;
     public int beginGame = 0;
+    public int sceneNumber = 1;
     
     IEnumerator CountdownToStart() {
+
+	while(SceneManager.GetActiveScene().buildIndex != sceneNumber) {
+		yield return null;
+	}
+
         while(countdownTime > 0) {
             yield return new WaitForSeconds(1f);
             countdownTime--;
