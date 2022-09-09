@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour
     
     
     //Added material here
-    public int countdownTime;
+    public int countdownTime = 5;
     public int beginGame = 0;
     public int sceneNumber = 1;
     
@@ -35,6 +35,12 @@ public class Timer : MonoBehaviour
         }
 	   
        beginGame = 1;
+       yield return new WaitForSeconds(1f);
+        
+    }
+
+    IEnumerator EndGameWait() {
+
        yield return new WaitForSeconds(1f);
         
     }
@@ -98,7 +104,12 @@ public class Timer : MonoBehaviour
                 textField.GetComponent<Text>().text = "Game Over!";
                 
                 //Add "You lose!" game screen / scene here, & ending game code.
-                
+
+
+                //Abel: Added this 09/06/2022
+                beginGame = 0;
+                StartCoroutine(EndGameWait());
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         
         

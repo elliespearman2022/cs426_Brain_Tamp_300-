@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CharacterControllerShooter
+    - CreditsAudio
+    - DontDestroyMusic
     - DoorController
     - NPCAttributes
     - SceneLoader
@@ -25,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.BaseInput
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
@@ -34,6 +37,63 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/EndScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11278}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11884}
+    - Class: 114
+      Script: {instanceID: 12286}
+    - Class: 114
+      Script: {instanceID: 12508}
+    - Class: 114
+      Script: {instanceID: 12598}
+    - Class: 114
+      Script: {instanceID: 12604}
+    - Class: 114
+      Script: {instanceID: 12716}
+    - Class: 114
+      Script: {instanceID: 12786}
+    - Class: 114
+      Script: {instanceID: 13152}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -80,35 +140,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 11882}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 12030}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 12194}
+      Script: {instanceID: 12032}
     - Class: 114
-      Script: {instanceID: 12244}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12372}
+      Script: {instanceID: 12246}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12762}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12770}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12786}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13030}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 13082}
+      Script: {instanceID: 13038}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 13090}
     - Class: 114
-      Script: {instanceID: 13144}
+      Script: {instanceID: 13092}
     - Class: 114
-      Script: {instanceID: 16430}
+      Script: {instanceID: 13152}
+    - Class: 114
+      Script: {instanceID: 16874}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -159,25 +221,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11882}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 11910}
+      Script: {instanceID: 11912}
     - Class: 114
-      Script: {instanceID: 12284}
+      Script: {instanceID: 12286}
     - Class: 114
-      Script: {instanceID: 12506}
+      Script: {instanceID: 12508}
     - Class: 114
-      Script: {instanceID: 12520}
+      Script: {instanceID: 12522}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12604}
     - Class: 114
-      Script: {instanceID: 12778}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12786}
     - Class: 114
-      Script: {instanceID: 13144}
+      Script: {instanceID: 12946}
     - Class: 114
-      Script: {instanceID: 43144}
+      Script: {instanceID: 13082}
+    - Class: 114
+      Script: {instanceID: 13152}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -315,6 +379,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DontDestroyMusic
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -563,6 +633,18 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: cbeba0be93684d3bcd4b72542d830f58
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CreditsAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
       Hash: ed5a0ed2a7cb50e7bf517d2264e32eb9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -777,15 +859,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneLoader
   platform: 19
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/EndScene.unity
   playerPath: "/Users/Abel/Documents/School/UIC Spring '21/CS 426/Homework/HW6/cs426_Brain_Tamp_300-/Final
-    Windows Build/Brain-Temp 300\xB0/B-T300\xB0_PT.exe"
+    Windows Build/Brain-Temp 300\xB0/Brain-Temp 300\xB0/B-T300\xB0_PT.exe"
