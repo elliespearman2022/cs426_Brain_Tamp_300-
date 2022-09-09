@@ -13,7 +13,7 @@ As the head boss of a design firm in New York, you hold a lot of responsibilitie
 This project is the final project for CS 426 (Video Game Design and Development) at the University of Illinois at Chicago, Spring 2021. Our task was to develop a 3D game in Unity design a 3D game that incorporates elements discussed in the course: physics, AI, shaders, and sound, and in which the player starts in a “corridor”/”location” and moves towards a “gate/door” at the end of the corridor. The gate/door can be opened using a “puzzle”. Player enters a “room/space” and looks for the “artifact” which he/she has to acquire. The player will try to avoid a “trap”.
 
 ## Getting Started
-If you would like to simply play the game, you can download the [Windows](https://drive.google.com/drive/folders/1COCxbWqz89TBspGTLo7kpDsX9EAnrNGc?usp=sharing) or [Mac](https://drive.google.com/drive/folders/13cWPJiVHtAc3iaOIwAQKcTc-kvgZ6t2j?usp=sharing) versions. If you would like to experiment with the environment we developed the game in, make sure you have **Unity 2019.4.19f1** installed.
+If you would like to simply play the game, you can download the [Windows](https://drive.google.com/file/d/1pjTY43UxEppg9t3g3BB0fb9cx7wIFA4d/view?usp=sharing) or [Mac](https://drive.google.com/file/d/17Oqe1PqByypfQXHQX_zBqCQ9kxZ0i4ed/view?usp=sharing) versions. If you would like to experiment with the environment we developed the game in, make sure you have **Unity 2019.4.19f1** installed.
 * Windows: https://unity3d.com/get-unity/download?thank-you=update&download_nid=64443&os=Win
 * Mac: https://unity3d.com/get-unity/download?thank-you=update&download_nid=64443&os=Mac
 * Linux: https://accelerator.cloud.unity3d.com/api/v1/accelerator/download/installer?target_os=linux&download_location=lts-releases
