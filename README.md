@@ -18,16 +18,16 @@ If you would like to simply play the game, you can download the [Mac]("Final Mac
 * Mac: https://unity3d.com/get-unity/download?thank-you=update&download_nid=64443&os=Mac
 * Linux: https://accelerator.cloud.unity3d.com/api/v1/accelerator/download/installer?target_os=linux&download_location=lts-releases
 
-Once you are ready, open the project with Unity and you should be good from there. Please note that it is ***strongly recommended to use Unity 2019.4.19f1*** to experiment with the game environment, as support is not guaranteed with other versions. You can, however, take a look at the scripts in your IDE or editor of choice. Once you open up the project, it should look something like this:
-
 ![Project Screenshot](images/ProjectScreenshot.png)
+
+Once you are ready, open the project with Unity and you should be good from there. Please note that it is ***strongly recommended to use Unity 2019.4.19f1*** to experiment with the game environment, as support is not guaranteed with other versions. You can, however, take a look at the scripts in your IDE or editor of choice. Once you open up the project, it should look something like the image above.
 
 ## How To Play
 
 ![Gameplay](images/GamePlay.png)
 
 The game is simple enough to play (but tricky to beat!) and instructions are provided in the help menu upon loading the game. They will also be referenced here: 
-* **Controls:** W,A,S,D to move forward, view left, move backward, and view right accordingly. Space is to jump/power jump. Left click is to give out donuts.
+* **Controls:** W, A, S, D to move forward, view left, move backward, and view right accordingly. Space is to jump/power jump. Left click is to give out donuts.
 * **Workers** may or may not have a "high temperature". There are 4 workers with a high temperature, and the rest do not. Your job is to seek out those 4 workers and give them each a donut. They are scattered throughout the office and some may be in hard to find locations.
 * **Donuts** are given by left click, and may be restocked at the donut station close to the original spawn point. The player may only hold 3 donuts at one time, however, so a minimum of one restock is necessary to win.
 * **Timing** is essential! You only have 3 minutes to seek out all the workers with a high temperature and give them each a donut. Good luck!
