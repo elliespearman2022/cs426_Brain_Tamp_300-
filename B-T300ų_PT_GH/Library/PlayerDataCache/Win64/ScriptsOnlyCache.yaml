@@ -170,7 +170,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13152}
     - Class: 114
-      Script: {instanceID: 16874}
+      Script: {instanceID: 17660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -865,4 +865,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/EndScene.unity
   playerPath: "/Users/Abel/Documents/School/UIC Spring '21/CS 426/Homework/HW6/cs426_Brain_Tamp_300-/Final
-    Windows Build/Brain-Temp 300\xB0/Brain-Temp 300\xB0/B-T300\xB0_PT.exe"
+    Windows Build/Brain-Temp 300\xB0/B-T300\xB0_PT.exe"
