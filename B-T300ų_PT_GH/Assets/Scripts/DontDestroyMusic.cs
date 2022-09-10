@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /* This script keeps continuous audio playback between scenes 1 & 2 (game and credits scene). */
 

@@ -14,6 +14,7 @@ public class SceneLoader : MonoBehaviour
 
 		public void RestartGame() {
 
+		Destroy(GameObject.Find("Game Music"));
 		SceneManager.LoadScene(0);	
 
 	}
